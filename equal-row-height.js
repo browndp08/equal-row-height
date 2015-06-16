@@ -96,12 +96,6 @@
           }
         }, 1000);
         
-        // Watch screen resize.
-        $(window).one('resize', function () {
-          //if (windowLastResizedOn = new Date())
-          //self.init();
-        });
-        
       };
       
       self.adjustHeight = function () {
@@ -113,17 +107,12 @@
     };
     
     
-    container.$elements = [];
-    container.init = function () {
-      container.children().each(function () {
-        var element = new RowElement($(this));
-        container.$elements.push(element);
-        element.init();
-      });
-    };
     
     // Initialize
-    container.init();
+    container.children().each(function () {
+      var element = new RowElement($(this));
+      element.init();
+    });
     
     
   };
