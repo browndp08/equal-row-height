@@ -17,7 +17,7 @@ Include jQuery and the plugin on a page. Then select the parent grid container y
   <div>col 3</div>
 </div>
 <script src="jquery.js"></script>
-<script src="jquery.validate.js"></script>
+<script src="bower_components/equal-row-height/equal-row-height.js"></script>
 <script>
 $(".container").equalRowHeight();
 </script>
