@@ -1,0 +1,30 @@
+{
+  "name": "equal-row-height",
+  "main": "equal-row-height.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/browndp08/equal-row-height",
+  "authors": [
+    "Delaney P. Brown <pat@crossdistinction.com>"
+  ],
+  "description": "A jQuery plugin that gives equal height to every row in a grid based on the tallest row item.",
+  "keywords": [
+    "equal",
+    "row",
+    "height",
+    "row",
+    "height",
+    "grid",
+    "alignment"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.4"
+  }
+}

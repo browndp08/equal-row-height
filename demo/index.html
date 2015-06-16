@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <style>
+      h1{
+        clear:both;
+      }
+      img {
+        max-height:200px;
+        width:100%;
+      }
+      .col{
+        width:98%;
+        float:left;
+        background:#ccc;
+        padding:1%;
+        margin:1%;
+      }
+      
+      @media( min-width: 400px) {
+        .col{
+          width:46%;
+        }
+      }
+      
+      @media( min-width: 768px) {
+        .col{
+          width:21%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Plugin</h1>
+    <div class="container fix-me">
+        <div class="col">
+          <h1>Column 1</h1>
+        </div>
+        <div class="col">
+          <h1>Column 2</h1>
+          <p>Lorem ipsum dolor sit amet, at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+          <p>Mauris viverra ex in urna commodo.  Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>I work with images too!</h1>
+          <img src="crazy_cats.jpg">
+        </div>
+        <div class="col">
+          <h1>Column 4</h1>
+          <p>Ut nec dictum enim. Quisque ac tortor lacus. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 5</h1>
+          <p>Lorem ipsum dolor sit amet, at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+          <p>Mauris viverra ex in urna commodo.  Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 6</h1>
+          <p>Ut nec dictum enim. Quisque ac tortor lacus. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 7</h1>
+        </div>
+        <div class="col">
+          <h1>Column 8</h1>
+          <p>Ut nec dictum enim. Quisque ac tortor lacus. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+    </div><!--/container-->
+    
+    <h1>No Plugin</h1>
+    <div class="container">
+        <div class="col">
+          <h1>Column 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec dictum enim. Quisque ac tortor lacus. Mauris viverra ex in urna commodo, ac malesuada arcu interdum. Donec eleifend metus id convallis vehicula. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec dictum enim. Quisque ac tortor lacus. Mauris viverra ex in urna commodo, ac malesuada arcu interdum. Donec eleifend metus id convallis vehicula. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec dictum enim. Quisque ac tortor lacus. Mauris viverra ex in urna commodo, ac malesuada arcu interdum. Donec eleifend metus id convallis vehicula. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>I work with images too!</h1>
+          <img src="crazy_cats.jpg">
+        </div>
+        <div class="col">
+          <h1>Column 4</h1>
+          <p>Ut nec dictum enim. Quisque ac tortor lacus. Mauris viverra ex in urna commodo, ac malesuada arcu interdum. Donec eleifend metus id convallis vehicula. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 5</h1>
+          <p>Lorem ipsum dolor sit amet, at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+          <p>Mauris viverra ex in urna commodo.  Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 6</h1>
+          <p>Ut nec dictum enim. Quisque ac tortor lacus. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+        <div class="col">
+          <h1>Column 7</h1>
+        </div>
+        <div class="col">
+          <h1>Column 8</h1>
+          <p>Ut nec dictum enim. Quisque ac tortor lacus. Curabitur at hendrerit elit. Pellentesque eleifend lacinia nulla venenatis elementum.</p>
+        </div>
+    </div><!--/container-->
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../equal-row-height.js"></script>
+    <script>
+      $('.fix-me').equalRowHeight();
+      
+      
+      $(window).resize(function(){
+        $('.fix-me').equalRowHeight();
+      });
+    </script>
+  </body>
+</html>
