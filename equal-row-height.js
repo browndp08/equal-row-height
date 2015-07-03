@@ -77,8 +77,8 @@
       self.init = function () {
         var currentTop = self.$element.position().top;
         var windowLastResizedOn; // Necessary to no when to reinit.
-        // Check if image
-        if (self.$element.find('img') && self.$element.find('img').height() === 0) {
+        // Check if image exists, is not yet loaded (height===0) & is visible
+        if (self.$element.find('img') && self.$element.find('img').height() === 0 && self.$element.find('img').is(':visible')) {
           self.$element.find('img').on('load', function () {
             // Set height.
             self.adjustHeight();
@@ -106,14 +106,10 @@
       
     };
     
-    
-    
     // Initialize
     container.children().each(function () {
       var element = new RowElement($(this));
       element.init();
     });
-    
-    
   };
 })(jQuery);
